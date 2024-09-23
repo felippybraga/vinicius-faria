@@ -248,10 +248,32 @@ footer > a:hover {
     }
 
     div.trabalho {
+        width: 50px;
         font-size: 1.2em;
     }
 
+    .trabalho p {
+        
+    }
+
+    #bloco1 {
+        padding: 10px 35px 0px 50px;
+        height: 45px;
+    }
     
+    #bloco2{
+        padding: 10px 50px 10px 50px;
+    }
+    
+    #bloco3 {
+        padding: 10px 50px 0px 50px;
+        height: 45px;
+    }
+    
+    #bloco4 {
+        padding: 10px 50px 0px 50px;
+        height: 27px;
+    }
 
     a {
         font-size: 0.5em;
