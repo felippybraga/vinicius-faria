@@ -4,8 +4,7 @@
 
 :root {
     --cor1: rgb(73,29,20);
-    --cor2: (73, 29, 20, 0.103);
-}
+    --cor2: rgba(73, 29, 20, 0.185);
 
 * {
 
@@ -313,7 +312,7 @@ footer > a:hover {
         font-size: 0.7em;
         width: 306px;
         height: 15px;
-        margin: auto;
+        margin: 0px;
         padding: 0px 140px;
     }
 }
