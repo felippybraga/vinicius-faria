@@ -5,9 +5,6 @@
 :root {
     --cor1: rgb(73,29,20);
     --cor2: rgba(73, 29, 20, 0.185);
-
-* {
-
 }
 
 html {
@@ -22,7 +19,7 @@ body{
 
 
 header {
-    background: white url(imagens/imagem01.png) center center no-repeat;
+    background: white url(imagens/fundo-head.png) center center no-repeat;
     background-size: cover;
     color: var(--cor1);
     height: 100vh;
@@ -68,7 +65,7 @@ p#crp {
 }
 
 main {
-    background: var(--cor1) url(imagens/fundo-main.jpg) center center no-repeat;
+    background: var(--cor1) url(imagens/fundo-main.png) center center no-repeat;
     background-size: cover;
     color: white;
     margin: auto;
@@ -209,9 +206,9 @@ footer > a:hover {
     }
 
     header {
-        background: white url(imagens/imagem01.png) center center no-repeat;
+        background: white url(imagens/fundo-head-cll.png) center center no-repeat;
         background-size: cover;
-        width: 300px;
+        width: 320px;
         height: 100px;
     }
 
@@ -227,10 +224,10 @@ footer > a:hover {
     }
 
     main{
-        background: var(--cor1) url(imagens/fundo-main.jpg) right center no-repeat;
+        background: var(--cor1) url(imagens/fundo-main-cll.png) center top no-repeat;
         background-size: cover;
-        width: 500px;
-        height: 1000px;
+        width: 400px;
+        height: 2500px;
         padding: 10px;
         margin: 0px;
     }
@@ -240,8 +237,8 @@ footer > a:hover {
     }
 
     section#sobremim {
-        padding: 20px 250px 80px 50px;
-        font-size: 0.6em;
+        padding: 100px 150px 475px 50px;
+        font-size: 0.9em;
     }
 
     section#trabalhos {
