@@ -22,12 +22,10 @@ header {
     background: white url(imagens/fundo-head.png) center center no-repeat;
     background-size: cover;
     color: var(--cor1);
-    height: 100vh;
+    height: 95vh;
     text-align: center;
     margin: auto;
     padding: 50px;
-    
-
 }
 
 h1 {
@@ -54,14 +52,14 @@ h1#segunda {
 }
 
 header > h2 {
-    font-size: 0.9em;
+    font-size: 0.7em;
     margin: 20px;
 }
 
 p#crp {
     margin-top: 0px;
     margin-bottom: 0px;
-
+    font-size: 0.7em;
 }
 
 main {
@@ -200,6 +198,9 @@ footer > a:hover {
 
 @media (max-width: 768px) {
 
+    html, body {
+        width: 85vw;
+    }
 
     p {
         font-size: 0.5em;
@@ -226,7 +227,7 @@ footer > a:hover {
     main{
         background: var(--cor1) url(imagens/fundo-main-cll.png) center top no-repeat;
         background-size: cover;
-        width: 400px;
+    
         height: 2500px;
         padding: 10px;
         margin: 0px;
