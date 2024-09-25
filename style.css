@@ -189,7 +189,12 @@ footer > a:hover {
     font-size: 1em;
 }
 
-
+div.teste {
+    background-color: blue;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -198,7 +203,8 @@ footer > a:hover {
         background-size: cover;
         padding: 0.5em;
         height: 200px;
-        width: 420px;
+        width: 400px;
+        margin: 0px;
     }
     
     h1 {
@@ -220,7 +226,7 @@ footer > a:hover {
         background: url(imagens/fundo-main-cll.png) right center no-repeat;
         background-size: cover;
         height: 2500px;
-        width: 400px;
+        width: 352px;
         padding: 2em;
         margin: 0px;
     }
@@ -280,7 +286,7 @@ footer > a:hover {
     }
 
     section#contato {
-        margin: 300px 0px 0px 95px;
+        margin: 250px 0px 0px 95px;
     }
 
     section#contato h3 {
@@ -304,8 +310,9 @@ footer > a:hover {
         font-size: 0.8em;
     }
 
-
     footer {
         padding: 0.5em;
     }
+
+
 }
