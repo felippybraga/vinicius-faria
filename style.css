@@ -57,7 +57,6 @@ header > h2 {
 }
 
 p#crp {
-    color: red;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 0.7em;
@@ -70,7 +69,6 @@ main {
     margin: auto;
     padding:30px ;
     height: 1500px;
-    min-width: 566px;
     max-width: 1000px;
 }
 
@@ -89,8 +87,8 @@ p {
 section#sobremim {
     margin: -30px;
     padding: 63px 350px 50px 100px;
-
 }
+
 
 section#trabalhos {
     text-align: center;
@@ -128,7 +126,6 @@ div.trabalho {
     padding: 10px 50px 0px 50px;
     height: 27px;
 }
-
 
 div.trabalho p {
     color: var(--cor1);
@@ -177,11 +174,6 @@ a#Localização {
     color: white;
 }
 
-a.logos {
-    color: var(--cor1);
-    font-family: 'logos' ;
-}
-
 footer {
     background-color: var(--cor2T);
     color: var(--cor1);
@@ -197,76 +189,58 @@ footer > a:hover {
     font-size: 1em;
 }
 
-@media (max-width: 768px) {
 
-    html, body {
-        width: 85vw;
-    }
 
-    p {
-        font-size: 0.5em;
-    }
+@media only screen and (max-width: 600px) {
 
     header {
-        background: white url(imagens/fundo-head-cll.png) center center no-repeat;
+        background: url(imagens/fundo-head-cll.png) center center no-repeat;
         background-size: cover;
-        width: 320px;
-        height: 100px;
+        padding: 0.5em;
+        height: 200px;
+        width: 420px;
     }
-
-    h1{
+    
+    h1 {
         font-size: 3em;
         padding: 0px;
         margin: 0px;
         line-height: 34px;
     }
-
-    h2 {
-        margin: 0px;
-    }
-
-    main{
-        background: var(--cor1) url(imagens/fundo-main-cll.png) center top no-repeat;
-        background-size: cover;
     
-        height: 2500px;
-        padding: 10px;
-        margin: 0px;
-    }
-
-    h3 {
-        margin: 40px 0px 20px 0px;
-    }
-
-    section#sobremim {
-        padding: 100px 150px 475px 50px;
-        font-size: 0.9em;
-    }
-
-    section#trabalhos {
-        padding: 20px;
+    head h2 {
         font-size: 0.6em;
     }
 
-    section#contato {
-        margin: -40px 0px 0px 35px;
+    p#crp {
+        font-size: 0.6em;
+    }
+    
+    main {
+        background: url(imagens/fundo-main-cll.png) right center no-repeat;
+        background-size: cover;
+        height: 2500px;
+        width: 400px;
+        padding: 2em;
+        margin: 0px;
     }
 
-    section#contato h3 {
+    section#sobremim {
+        padding: 90px 120px 505px 50px;
+        font-size: 0.9em;
+    }
+
+    section#sobremim h3{
         font-size: 2em;
     }
     
-    section#Localização {
-        margin: 65px 0px 0px -250px;
-    }
-
-    section#Localização h3 {
-        font-size: 2em;
+    section#trabalhos h3 {
+        font-size: 2.5em;
     }
 
     div.trabalho {
         width: 50px;
-        font-size: 1.1em;
+        font-size: 0.8em;
     }
 
     .trabalho p {
@@ -280,7 +254,7 @@ footer > a:hover {
     }
     
     #bloco2{
-        padding: 10px 35px 10px 20px;
+        padding: 10px 35px 25px 20px;
         height: 25px;
     }
     
@@ -292,26 +266,46 @@ footer > a:hover {
     #bloco4 {
         padding: 10px 35px 0px 20px;
         height: 20px;
-        margin-bottom: 80px;
     }
 
     div.con-loc {
         width: 500px;
         height: 500px;
         margin: 0px 50px 0px 0px;
-
+        font-size: 0.8em;
     }
 
     a {
-        font-size: 0.6em;
-    }  
+    font-size: 0.8em;
+    }
+
+    section#contato {
+        margin: 300px 0px 0px 95px;
+    }
+
+    section#contato h3 {
+        font-size: 2.5em;
+    }
+
+    section#contato a {
+        font-size: 1em;
+    }
+
+    section#Localização {
+        margin: 650px 0px -50px -500px;
+    }
+
+    section#Localização h3 {
+        font-size: 2.5em;
+    }
+
+    section#Localização a {
+        height: 20px;
+        font-size: 0.8em;
+    }
+
 
     footer {
-        background-color: rgb(252, 237, 234);
-        font-size: 0.7em;
-        width: 306px;
-        height: 15px;
-        margin: 0px;
-        padding: 0px 140px;
+        padding: 0.5em;
     }
 }
