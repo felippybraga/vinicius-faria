@@ -71,7 +71,6 @@ p#crp {
     font-size: 0.7em;
 }
 
-
 main {
     background: var(--cor1) url(imagens/fundo-main.png) center center no-repeat;
     background-size: cover;
@@ -149,8 +148,20 @@ div#con-loc {
 }
 
 img.logos {
-    filter: var(--cor1);
     margin: -51px -37px;
+}
+
+div.links:hover {
+    img.logos {
+        border: 2px solid transparent;
+        border-radius: 50%;
+        transform: translate(-3px, -3px);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+    }
+    a {
+            text-decoration: underline;
+            transform: translate(-3px, -3px);
+    }
 }
 
 img#localização {
@@ -183,11 +194,6 @@ a {
     color: var(--cor1);
     text-decoration: none;
     font-size: 1em;
-}
-
-a:hover {
-    text-decoration: underline;
-    font-size: 1.1em;
 }
 
 a#Localização {
@@ -330,7 +336,8 @@ footer > a:hover {
     }
 
     section#contato h3 {
-        font-size: 2.5em;
+        font-size: 4em;
+        margin: 0px;
     }
 
     section#contato a {
@@ -338,16 +345,21 @@ footer > a:hover {
     }
 
     section#Localização {
-        margin: 630px 0px -50px -405px;
+        margin: 630px 0px -50px -450px;
     }
 
     section#Localização h3 {
-        font-size: 2.5em;
+        font-size: 4em;
+        margin-left: -35px;
     }
 
     section#Localização a {
         height: 20px;
-        font-size: 0.8em;
+        font-size: 1.3em;
+    }
+
+    img#localização {
+        margin: -90px -50px
     }
 
     footer {
