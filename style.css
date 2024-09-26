@@ -3,8 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 :root {
-    --cor1: rgb(73,29,20);
-    --cor2: rgba(73, 29, 20, 0.185);
+    --cor1: #641b0c;
+    --cor2: #491d142f;
+    --cor3: #2b0903;
 }
 
 html {
@@ -13,10 +14,13 @@ html {
 }
 
 body{
-     background-color: var(--cor2);
-     margin: auto;
+    /*
+    background: var(--cor2) url(imagens/fundo-main.png) center center no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(0px);
+    */
+    margin: auto;
 }
-
 
 header {
     background: white url(imagens/fundo-head.png) center center no-repeat;
@@ -29,31 +33,36 @@ header {
 }
 
 h1 {
-    line-height: 95px;
+    line-height: 100px;
+    margin: auto;
     font-size: 8.5em;
-    margin-bottom: 2.5px;
 }
 
 h1#primeira {
-    background-image: linear-gradient(5deg, var(--cor1), rgba(255, 255, 255, 0.877));
+    background-image: linear-gradient(5deg, var(--cor3), rgba(255, 255, 255, 0.877));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: 175px;
 }
 
     
 
 h1#segunda {
-    background-image: linear-gradient(190deg, var(--cor1), rgba(131, 102, 95, 0.616));
+    background-image: linear-gradient(190deg, var(--cor3), rgba(131, 102, 95, 0.616));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
+    font-size: 9.1em;
     margin-top: 0px;
-
 }
 
 header > h2 {
     font-size: 0.7em;
-    margin: 20px;
+    margin: 20px auto;
+    border: 1px solid var(--cor1);
+    width: 160px;
+    padding: 5px;
+
+    
 }
 
 p#crp {
@@ -61,6 +70,7 @@ p#crp {
     margin-bottom: 0px;
     font-size: 0.7em;
 }
+
 
 main {
     background: var(--cor1) url(imagens/fundo-main.png) center center no-repeat;
@@ -138,13 +148,23 @@ div#con-loc {
     position: relative;
 }
 
+img.logos {
+    filter: var(--cor1);
+    margin: -51px -37px;
+}
+
+img#localização {
+    width: 50px;
+    margin: -80px -50px
+}
+
 section#contato h3 {
     margin: 0px 0px 0px 20px;
 }
 
 section#contato {
     color: var(--cor1);
-    margin: 200px;
+    margin: 170px 510px 170px 200px;
 }
 
 section#Localização h3 {
@@ -156,7 +176,7 @@ section#Localização {
     position: absolute;
 
     left: 550px;
-    top: -65px;
+    top: 0px;
 }
 
 a {
@@ -189,29 +209,49 @@ footer > a:hover {
     font-size: 1em;
 }
 
-div.teste {
-    background-color: blue;
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
+@media only screen and (max-width: 1040px) {
+
+    main {
+        height: 1585px;
+    }
+
+    div#con-loc {
+        margin: 0px 0px 0px -55px;
+    }
+
+    footer {
+        width: 492px;
+        margin: auto;
+        padding: 0px 50px;
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 873px) {
+
 
     header {
         background: url(imagens/fundo-head-cll.png) center center no-repeat;
         background-size: cover;
         padding: 0.5em;
-        height: 200px;
+        height: 450px;
         width: 400px;
-        margin: 0px;
+        margin: auto;
     }
     
     h1 {
-        font-size: 3em;
+        font-size: 5em;
         padding: 0px;
-        margin: 0px;
-        line-height: 34px;
+        margin: -10px 0px;
+        line-height: 57px;
+    }
+
+    h1#primeira {
+        margin-top: 120px ;
+        margin-bottom: 0px;
+    }
+
+    h1#segunda {
+        font-size: 5.2em;
     }
     
     head h2 {
@@ -228,11 +268,11 @@ div.teste {
         height: 2500px;
         width: 352px;
         padding: 2em;
-        margin: 0px;
+        margin: auto;
     }
 
     section#sobremim {
-        padding: 90px 120px 505px 50px;
+        padding: 90px 120px 448px 50px;
         font-size: 0.9em;
     }
 
@@ -286,7 +326,7 @@ div.teste {
     }
 
     section#contato {
-        margin: 250px 0px 0px 95px;
+        margin: 260px 0px 0px 140px;
     }
 
     section#contato h3 {
@@ -298,7 +338,7 @@ div.teste {
     }
 
     section#Localização {
-        margin: 650px 0px -50px -500px;
+        margin: 630px 0px -50px -405px;
     }
 
     section#Localização h3 {
@@ -311,8 +351,14 @@ div.teste {
     }
 
     footer {
-        padding: 0.5em;
+        padding: 0px 25px;
+        font-size: 0.8em;
+        width: 416px;
     }
 
+    footer a {
+        color:var(--cor3);
+        font-size: 1em;
+    }
 
 }
