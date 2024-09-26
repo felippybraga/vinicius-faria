@@ -284,8 +284,9 @@ footer > a:hover {
     }
 
     header h2 {
+        margin-bottom: 5px;
         font-size: 1em;
-        width: 190px;
+        width: 200px;
     }
 
     p#crp {
