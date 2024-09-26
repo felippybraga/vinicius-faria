@@ -74,7 +74,7 @@ header > h2 {
 p#crp {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 0.7em;
+    font-size: 1.3em;
 }
 
 .background {
@@ -289,7 +289,7 @@ footer > a:hover {
     }
 
     p#crp {
-        font-size: 0.7em;
+        font-size: 1em;
     }
     
     .background {
