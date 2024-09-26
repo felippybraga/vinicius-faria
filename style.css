@@ -234,13 +234,16 @@ footer > a:hover {
 
 @media only screen and (max-width: 873px) {
 
+    body {
+        width: auto;
+    }
 
     header {
         background: url(imagens/fundo-head-cll.png) center center no-repeat;
         background-size: cover;
         padding: 0.5em;
         height: 450px;
-        width: 400px;
+        width: 380px;
         margin: auto;
     }
     
@@ -272,7 +275,7 @@ footer > a:hover {
         background: url(imagens/fundo-main-cll.png) right center no-repeat;
         background-size: cover;
         height: 2500px;
-        width: 352px;
+        width: 332px;
         padding: 2em;
         margin: auto;
     }
@@ -336,7 +339,7 @@ footer > a:hover {
     }
 
     section#contato h3 {
-        font-size: 4em;
+        font-size: 3.7em;
         margin: 0px;
     }
 
@@ -349,13 +352,13 @@ footer > a:hover {
     }
 
     section#Localização h3 {
-        font-size: 4em;
+        font-size: 3.7em;
         margin-left: -35px;
     }
 
     section#Localização a {
         height: 20px;
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     img#localização {
