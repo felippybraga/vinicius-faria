@@ -23,7 +23,7 @@ header {
     background: white url(imagens/fundo-head.png) center center no-repeat;
     background-size: cover;
     color: var(--cor1);
-    height: 95vh;
+    height: 85vh;
     text-align: center;
     margin: auto;
     padding: 50px;
@@ -52,7 +52,7 @@ h1 {
 }
 
 h1#primeira {
-    margin-top: 175px;
+    margin-top: 110px;
 }
 
     
@@ -107,14 +107,23 @@ p {
 
 section#sobremim {
     margin: -30px;
-    padding: 63px 350px 50px 100px;
+    padding: 63px 350px 130px 100px;
 }
 
+section#sobremim h3 {
+    margin-top: 112px;
+    margin-bottom: 20px;
+}
 
 section#trabalhos {
     text-align: center;
     margin: 30px -30px;
+    margin-bottom: 25px;
     padding: 0px 0px 50px 5px;
+}
+
+section#trabalhos h3 {
+    margin-bottom: 25px;
 }
 
 div.trabalho {
@@ -130,21 +139,21 @@ div.trabalho {
 }
 
 #bloco1 {
-    padding: 10px 50px 0px 50px;
+    padding: 10px 50px 0px 23px;
     height: 45px;
 }
 
 #bloco2{
-    padding: 10px 50px 10px 50px;
+    padding: 10px 50px 10px 23px;
 }
 
 #bloco3 {
-    padding: 10px 50px 0px 50px;
+    padding: 10px 50px 0px 23px;
     height: 45px;
 }
 
 #bloco4 {
-    padding: 10px 50px 0px 50px;
+    padding: 10px 50px 0px 23px;
     height: 27px;
 }
 
@@ -187,7 +196,7 @@ section#contato h3 {
 
 section#contato {
     color: var(--cor1);
-    margin: 170px 510px 170px 200px;
+    margin: 80px 510px 170px 200px;
 }
 
 section#Localização h3 {
@@ -307,7 +316,7 @@ footer > a:hover {
     }
 
     section#sobremim {
-        padding: 90px 120px 420px 50px;
+        padding: 90px 120px 438px 50px;
         font-size: 0.9em;
     }
 
@@ -325,7 +334,8 @@ footer > a:hover {
     }
 
     .trabalho p {
-        padding: 0px ;
+        padding: 0px;
+        padding-left: -10px;
         width: -50px;
     }
 
@@ -361,7 +371,7 @@ footer > a:hover {
     }
 
     section#contato {
-        margin: 210px 0px 0px 120px;
+        margin: 220px 0px 0px 120px;
     }
 
     section#contato h3 {
