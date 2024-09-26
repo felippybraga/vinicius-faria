@@ -3,23 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 :root {
-    --cor1: #641b0c;
-    --cor2: #491d142f;
+    --cor1: hsl(10, 81%, 19%);
+    --cor2: rgba(88, 41, 32, 0.259);
     --cor3: #2b0903;
 }
 
 html {
-    height: 100vh;
 
+    height: 100vh;
 }
 
 body{
-    /*
-    background: var(--cor2) url(imagens/fundo-main.png) center center no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(0px);
-    */
     margin: auto;
+    height: 25px;
+    padding: 0px;
 }
 
 header {
@@ -36,21 +33,31 @@ h1 {
     line-height: 100px;
     margin: auto;
     font-size: 8.5em;
+
+    background-image: linear-gradient(5deg, #2b0903,  #421007, #6e3b3be0, #2b0903);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 400%;
+    }
 }
 
 h1#primeira {
-    background-image: linear-gradient(5deg, var(--cor3), rgba(255, 255, 255, 0.877));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     margin-top: 175px;
 }
 
     
 
 h1#segunda {
-    background-image: linear-gradient(190deg, var(--cor3), rgba(131, 102, 95, 0.616));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 9.1em;
     margin-top: 0px;
 }
@@ -58,7 +65,9 @@ h1#segunda {
 header > h2 {
     font-size: 0.7em;
     margin: 20px auto;
+    /*
     border: 1px solid var(--cor1);
+    */
     width: 160px;
     padding: 5px;
 
@@ -69,6 +78,11 @@ p#crp {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 0.7em;
+}
+
+.background {
+    background: var(--cor2) url(imagens/fundo-body.jpg) center center no-repeat;
+    background-size: cover;
 }
 
 main {
@@ -201,10 +215,14 @@ a#Localização {
 }
 
 footer {
-    background-color: var(--cor2T);
-    color: var(--cor1);
+    background-color: var(--cor1);
+    color: white;
     font-family: 'sora';
     padding: 0px 425px;
+}
+
+footer a {
+    color: white;
 }
 
 footer > a::after {
@@ -213,6 +231,7 @@ footer > a::after {
 
 footer > a:hover {
     font-size: 1em;
+    font-style: underline;
 }
 
 @media only screen and (max-width: 1040px) {
@@ -235,6 +254,8 @@ footer > a:hover {
 @media only screen and (max-width: 873px) {
 
     body {
+        background-color: var(--cor2);
+        background-size: cover;
         width: auto;
     }
 
@@ -243,7 +264,7 @@ footer > a:hover {
         background-size: cover;
         padding: 0.5em;
         height: 450px;
-        width: 380px;
+        width: 385px;
         margin: auto;
     }
     
@@ -271,11 +292,15 @@ footer > a:hover {
         font-size: 0.6em;
     }
     
+    .background {
+        background-image: none;
+    }
+
     main {
-        background: url(imagens/fundo-main-cll.png) right center no-repeat;
+        background: url(imagens/fundo-main-cll.png) center right no-repeat;
         background-size: cover;
         height: 2500px;
-        width: 332px;
+        width: 337px;
         padding: 2em;
         margin: auto;
     }
@@ -366,7 +391,9 @@ footer > a:hover {
     }
 
     footer {
-        padding: 0px 25px;
+        background-color: var(--cor2);
+        color: var(--cor1);
+        padding: 0px 2px 0px 3px;
         font-size: 0.8em;
         width: 396px;
     }
