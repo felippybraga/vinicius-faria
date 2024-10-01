@@ -437,7 +437,7 @@ footer img {
         border-radius: 10px;
         width: 50px;
         right: 60px;
-        top: 570px;
+        bottom: 10px;
     }
     
     @media only screen and (min-width: 537px) {
