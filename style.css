@@ -247,6 +247,10 @@ footer img {
     margin: 10px 10px -8px 0px;
 }
 
+#whatsapp {
+    display: none;
+}
+
 @media only screen and (max-width: 1040px) {
 
     main {
@@ -423,6 +427,17 @@ footer img {
     footer img {
         padding: 0px;
         width: 22px;
+    }
+
+    #whatsapp {
+        display: block;
+        position: fixed;
+        margin: auto;
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 50px;
+        top: 570px;
+        right: 146px;
     }
 
 }
