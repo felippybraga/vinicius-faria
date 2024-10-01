@@ -429,15 +429,22 @@ footer img {
         width: 22px;
     }
 
-    #whatsapp {
+    img.whatsapp {
         display: block;
         position: fixed;
         margin: auto;
         border: 2px solid white;
         border-radius: 10px;
         width: 50px;
+        right: 60px;
         top: 570px;
-        right: 146px;
+    }
+    
+    @media only screen and (min-width: 537px) {
+
+        img.whatsapp {
+            display: none;
+        }
     }
 
 }
