@@ -9,7 +9,7 @@
 }
 
 html {
-
+    background-color: var(--cor2);
     height: 100vh;
 }
 
@@ -225,7 +225,11 @@ footer {
     background-color: var(--cor1);
     color: white;
     font-family: 'sora';
-    padding: 5px 425px;
+    padding: 50px 50px;
+}
+
+footer p {
+    text-align: left;
 }
 
 footer a {
@@ -247,7 +251,7 @@ footer img {
     margin: 10px 10px -8px 0px;
 }
 
-#whatsapp {
+.whatsapp {
     display: none;
 }
 
@@ -414,19 +418,26 @@ footer img {
     footer {
         background-color: var(--cor2);
         color: var(--cor1);
-        padding: 5px 2px 5px 3px;
-        font-size: 0.8em;
+        padding: 50px 2px 20px 3px;
+        font-size: 0.7em;
         width: 396px;
+    }
+
+    footer p {
+        font-size: left;
+        padding: 0px 20px 0px 20px;
     }
 
     footer a {
         color:var(--cor3);
         font-size: 1em;
+
     }
 
     footer img {
         padding: 0px;
-        width: 22px;
+        width: 16px;
+        margin-left: 20px;
     }
 
     img.whatsapp {
@@ -437,7 +448,7 @@ footer img {
         border-radius: 10px;
         width: 50px;
         right: 15px;
-        bottom: 10px;
+        bottom: 30px;
     }
     
     @media only screen and (min-width: 537px) {
