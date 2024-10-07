@@ -225,11 +225,12 @@ footer {
     background-color: var(--cor1);
     color: white;
     font-family: 'sora';
-    padding: 50px 50px;
+    padding: 40px 50px 20px 50px;
+    text-align: center;
 }
 
 footer p {
-    text-align: left;
+    text-align: center;
 }
 
 footer a {
